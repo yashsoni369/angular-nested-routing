@@ -1,12 +1,11 @@
-<p>
+<p style="font-weight: 600; font-size: 18px; margin-bottom: 8px; color: #343a40;">
   admin-parent Component!
 </p>
 
-<h2>Default 1st child is Loaded</h2>
+<h2 style="font-size: 20px; margin-bottom: 16px; color: #495057;">Default 1st child is Loaded</h2>
 
-
-<button class="btn btn-primary" [routerLink]="[ './achild' ]">Child</button>
+<button class="btn btn-primary" [routerLink]="[ './achild' ]" style="margin-right: 8px;">Child</button>
 <button class="btn btn-primary" [routerLink]="[ './aabout' ]">About</button>
-<div class="jumbotron" style="border: 1px solid black">
+<div class="jumbotron" style="margin-top: 16px; border: 1px solid #343a40; border-radius: 4px; padding: 16px; background-color: #ffffff;">
   <router-outlet></router-outlet>
 </div>
