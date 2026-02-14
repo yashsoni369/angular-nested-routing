@@ -8,6 +8,7 @@ import { UserParentComponent } from './user-parent/user-parent.component';
 import { UserChildComponent } from './user-parent/user-child/user-child.component';
 import { AdminChildComponent } from './admin-parent/admin-child/admin-child.component';
 import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.comp
     UserParentComponent,
     UserChildComponent,
     AdminChildComponent,
-    AdminAboutComponent
+    AdminAboutComponent,
+    HelloWorldComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,8 @@ import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.comp
           { path: 'aabout', component: AdminAboutComponent },
         ]
       },
-      { path: 'user', component: UserParentComponent }
+      { path: 'user', component: UserParentComponent },
+      { path: 'hello', component: HelloWorldComponent }
     ])
   ],
   providers: [],
