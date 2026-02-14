@@ -1,34 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<div style="text-align:center; padding: 20px 0;">
+  <h1 class="app-heading" style="color: #333; font-family: Arial, sans-serif; margin-bottom: 10px;">
     Welcome to Nested Routing Tutorial!
   </h1>
 </div>
-<h2>Click on the button to start: </h2>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
+<h2 class="sub-heading" style="font-size: 1.2rem; color: #555; margin-bottom: 15px; padding-left: 10px;">Click on the button to start: </h2>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-bottom: 20px; border-radius: 4px;">
+  <a class="navbar-brand" href="#" style="font-weight: bold; letter-spacing: 1px;">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+    style="border-color: rgba(255,255,255,0.5);">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="[ '/admin' ]">Admin
+    <ul class="navbar-nav mr-auto" style="padding: 5px 0;">
+      <li class="nav-item active" style="margin-right: 5px;">
+        <a class="nav-link" [routerLink]="[ '/admin' ]" style="font-size: 1rem; padding: 8px 15px;">Admin
           <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="[ '/user' ]">User</a>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" [routerLink]="[ '/user' ]" style="font-size: 1rem; padding: 8px 15px;">User</a>
       </li>
     </ul>
   </div>
 </nav>
-<!-- <button [routerLink]="[ '/admin' ]">Admin</button>
-<button [routerLink]="[ '/user' ]">User</button> -->
-<div class="jumbotron">
-  <h2>First Router</h2>
+<div class="jumbotron" style="background-color: #e9ecef; padding: 30px; border-radius: 8px; margin-top: 20px; border: 1px solid #dee2e6;">
+  <h2 style="color: #495057; font-weight: 600;">First Router</h2>
   <br>
   <router-outlet></router-outlet>
 </div>
