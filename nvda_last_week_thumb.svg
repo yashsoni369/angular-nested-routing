@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="260" viewBox="0 0 600 260">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="300.0" y="24" text-anchor="middle" font-family="sans-serif" font-size="16">NVDA — Last 7 Days</text>
+<line x1="70" y1="180.00" x2="570" y2="180.00" stroke="#f2f4f8" stroke-width="1"/>
+<text x="60" y="184.00" text-anchor="end" font-family="monospace" font-size="12">171.88</text>
+<line x1="70" y1="147.50" x2="570" y2="147.50" stroke="#f2f4f8" stroke-width="1"/>
+<text x="60" y="151.50" text-anchor="end" font-family="monospace" font-size="12">176.42</text>
+<line x1="70" y1="115.00" x2="570" y2="115.00" stroke="#f2f4f8" stroke-width="1"/>
+<text x="60" y="119.00" text-anchor="end" font-family="monospace" font-size="12">180.97</text>
+<line x1="70" y1="82.50" x2="570" y2="82.50" stroke="#f2f4f8" stroke-width="1"/>
+<text x="60" y="86.50" text-anchor="end" font-family="monospace" font-size="12">185.51</text>
+<line x1="70" y1="50.00" x2="570" y2="50.00" stroke="#f2f4f8" stroke-width="1"/>
+<text x="60" y="54.00" text-anchor="end" font-family="monospace" font-size="12">190.05</text>
+<line x1="70" y1="180" x2="570" y2="180" stroke="#000" stroke-width="1"/>
+<text x="70.00" y="200" text-anchor="middle" font-family="sans-serif" font-size="12">2026-02-05</text>
+<line x1="70.00" y1="180" x2="70.00" y2="185" stroke="#000" stroke-width="1"/>
+<text x="153.33" y="200" text-anchor="middle" font-family="sans-serif" font-size="12">2026-02-06</text>
+<line x1="153.33" y1="180" x2="153.33" y2="185" stroke="#000" stroke-width="1"/>
+<text x="320.00" y="200" text-anchor="middle" font-family="sans-serif" font-size="12">2026-02-10</text>
+<line x1="320.00" y1="180" x2="320.00" y2="185" stroke="#000" stroke-width="1"/>
+<text x="486.67" y="200" text-anchor="middle" font-family="sans-serif" font-size="12">2026-02-12</text>
+<line x1="486.67" y1="180" x2="486.67" y2="185" stroke="#000" stroke-width="1"/>
+<text x="570.00" y="200" text-anchor="middle" font-family="sans-serif" font-size="12">2026-02-13</text>
+<line x1="570.00" y1="180" x2="570.00" y2="185" stroke="#000" stroke-width="1"/>
+<polyline points="70.00,180.00 153.33,83.20 236.67,50.07 320.00,60.80 403.33,50.00 486.67,72.25 570.00,101.80" fill="none" stroke="#a0c4ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.35"/>
+<polyline points="70.00,180.00 153.33,83.20 236.67,50.07 320.00,60.80 403.33,50.00 486.67,72.25 570.00,101.80" fill="none" stroke="#0b66ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="70.00" cy="180.00" r="3.5" fill="#0b66ff"/>
+<circle cx="153.33" cy="83.20" r="3.5" fill="#0b66ff"/>
+<circle cx="236.67" cy="50.07" r="3.5" fill="#0b66ff"/>
+<circle cx="320.00" cy="60.80" r="3.5" fill="#0b66ff"/>
+<circle cx="403.33" cy="50.00" r="3.5" fill="#0b66ff"/>
+<circle cx="486.67" cy="72.25" r="3.5" fill="#0b66ff"/>
+<circle cx="570.00" cy="101.80" r="3.5" fill="#0b66ff"/>
+<rect x="578.0" y="89.7996697853605" rx="4" ry="4" fill="#0b66ff" opacity="0.9"/>
+<text x="582.0" y="103.7996697853605" font-family="sans-serif" font-size="12" fill="#fff">182.81</text>
+</svg>

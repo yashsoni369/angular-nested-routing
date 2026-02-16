@@ -1,0 +1,12 @@
+{
+  "ticker": "NVDA",
+  "start_date": "2026-02-05",
+  "end_date": "2026-02-13",
+  "points": 7,
+  "min": 171.88,
+  "max": 190.05,
+  "first": 171.88,
+  "last": 182.81,
+  "pct_change": 6.3590877356295135,
+  "source": "remote"
+}
