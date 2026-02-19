@@ -30,10 +30,9 @@ import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.comp
         ]
       },
       { path: 'user', component: UserParentComponent }
-    ])
+    ], { useHash: false })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-{ }
