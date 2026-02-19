@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-user-child',
+  standalone: true,
   templateUrl: './user-child.component.html',
   styleUrls: ['./user-child.component.css']
 })
-export class UserChildComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class UserChildComponent {}
