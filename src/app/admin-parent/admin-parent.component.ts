@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-admin-parent',
   templateUrl: './admin-parent.component.html',
-  styleUrls: ['./admin-parent.component.css']
+  styleUrls: ['./admin-parent.component.css'],
+  standalone: false
 })
 export class AdminParentComponent implements OnInit {
 
