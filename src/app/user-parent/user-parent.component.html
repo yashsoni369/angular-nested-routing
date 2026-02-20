@@ -1,3 +1,24 @@
-<p>
-  user-parent works!
-</p>
+<div class="user-header">
+  <mat-icon class="section-icon" color="primary">person</mat-icon>
+  <div>
+    <h2 class="section-title">User Section</h2>
+    <p class="section-subtitle">Browse user child routes</p>
+  </div>
+</div>
+
+<mat-divider></mat-divider>
+
+<nav mat-tab-nav-bar color="accent">
+  <a mat-tab-link
+     [routerLink]="['./uchild']"
+     routerLinkActive
+     #rla1="routerLinkActive"
+     [active]="rla1.isActive">
+    <mat-icon class="tab-icon">face</mat-icon>
+    Profile
+  </a>
+</nav>
+
+<div class="child-outlet">
+  <router-outlet></router-outlet>
+</div>

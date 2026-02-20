@@ -1,0 +1,39 @@
+.user-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.section-subtitle {
+  margin: 2px 0 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+}
+
+mat-divider {
+  margin-bottom: 0;
+}
+
+.tab-icon {
+  margin-right: 6px;
+  font-size: 18px;
+  height: 18px;
+  width: 18px;
+}
+
+.child-outlet {
+  padding: 20px 0 0;
+}

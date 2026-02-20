@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../../material.module';
 
 import { UserChildComponent } from './user-child.component';
 
@@ -8,6 +10,7 @@ describe('UserChildComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [NoopAnimationsModule, MaterialModule],
       declarations: [UserChildComponent]
     }).compileComponents();
   }));
@@ -35,5 +38,10 @@ describe('UserChildComponent', () => {
   it('should have the selector "app-user-child"', () => {
     const el = fixture.debugElement.nativeElement;
     expect(el.tagName.toLowerCase()).toBe('app-user-child');
+  });
+
+  it('should be wrapped in a mat-card', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('mat-card')).toBeTruthy();
   });
 });

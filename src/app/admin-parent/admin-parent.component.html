@@ -1,12 +1,32 @@
-<p>
-  admin-parent Component!
-</p>
+<div class="admin-header">
+  <mat-icon class="section-icon" color="primary">admin_panel_settings</mat-icon>
+  <div>
+    <h2 class="section-title">Admin Section</h2>
+    <p class="section-subtitle">Manage child routes below</p>
+  </div>
+</div>
 
-<h2>Default 1st child is Loaded</h2>
+<mat-divider></mat-divider>
 
+<nav mat-tab-nav-bar color="primary" backgroundColor="primary">
+  <a mat-tab-link
+     [routerLink]="['./achild']"
+     routerLinkActive
+     #rla1="routerLinkActive"
+     [active]="rla1.isActive">
+    <mat-icon class="tab-icon">child_care</mat-icon>
+    Child
+  </a>
+  <a mat-tab-link
+     [routerLink]="['./aabout']"
+     routerLinkActive
+     #rla2="routerLinkActive"
+     [active]="rla2.isActive">
+    <mat-icon class="tab-icon">info</mat-icon>
+    About
+  </a>
+</nav>
 
-<button class="btn btn-primary" [routerLink]="[ './achild' ]">Child</button>
-<button class="btn btn-primary" [routerLink]="[ './aabout' ]">About</button>
-<div class="jumbotron" style="border: 1px solid black">
+<div class="child-outlet">
   <router-outlet></router-outlet>
 </div>

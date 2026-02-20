@@ -1,5 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../material.module';
 
 import { AdminParentComponent } from './admin-parent.component';
 
@@ -9,7 +11,7 @@ describe('AdminParentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, NoopAnimationsModule, MaterialModule],
       declarations: [AdminParentComponent]
     }).compileComponents();
   }));
@@ -39,16 +41,16 @@ describe('AdminParentComponent', () => {
     expect(compiled.querySelector('h2').textContent).toContain('Default 1st child is Loaded');
   });
 
-  it('should have a Child button with routerLink to "./achild"', () => {
+  it('should have a Child button with mat-raised-button', () => {
     const compiled = fixture.debugElement.nativeElement;
-    const buttons = compiled.querySelectorAll('button');
+    const buttons = compiled.querySelectorAll('button[mat-raised-button]');
     expect(buttons.length).toBe(2);
     expect(buttons[0].textContent).toContain('Child');
   });
 
-  it('should have an About button with routerLink to "./aabout"', () => {
+  it('should have an About button with mat-raised-button', () => {
     const compiled = fixture.debugElement.nativeElement;
-    const buttons = compiled.querySelectorAll('button');
+    const buttons = compiled.querySelectorAll('button[mat-raised-button]');
     expect(buttons[1].textContent).toContain('About');
   });
 
@@ -60,5 +62,10 @@ describe('AdminParentComponent', () => {
   it('should have the selector "app-admin-parent"', () => {
     const el = fixture.debugElement.nativeElement;
     expect(el.tagName.toLowerCase()).toBe('app-admin-parent');
+  });
+
+  it('should contain a mat-card for child content', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('mat-card')).toBeTruthy();
   });
 });

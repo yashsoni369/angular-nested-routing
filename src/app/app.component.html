@@ -1,34 +1,38 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to Nested Routing Tutorial!
-  </h1>
-</div>
-<h2>Click on the button to start: </h2>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<mat-toolbar color="primary" class="app-toolbar">
+  <mat-icon class="toolbar-icon">device_hub</mat-icon>
+  <span class="toolbar-brand">Nested Routing</span>
+  <span class="toolbar-spacer"></span>
+  <a mat-button
+     [routerLink]="['/admin']"
+     routerLinkActive="active-link"
+     matTooltip="Admin Section">
+    <mat-icon>admin_panel_settings</mat-icon>
+    Admin
+  </a>
+  <a mat-button
+     [routerLink]="['/user']"
+     routerLinkActive="active-link"
+     matTooltip="User Section">
+    <mat-icon>person</mat-icon>
+    User
+  </a>
+</mat-toolbar>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="[ '/admin' ]">Admin
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="[ '/user' ]">User</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- <button [routerLink]="[ '/admin' ]">Admin</button>
-<button [routerLink]="[ '/user' ]">User</button> -->
-<div class="jumbotron">
-  <h2>First Router</h2>
-  <br>
-  <router-outlet></router-outlet>
+<div class="app-content">
+  <h1>Welcome to Nested Routing Tutorial!</h1>
+  <h2>Click on a section above to get started</h2>
+
+  <mat-divider></mat-divider>
+
+  <mat-card class="router-card">
+    <mat-card-header>
+      <mat-icon mat-card-avatar class="card-header-icon">router</mat-icon>
+      <mat-card-title>Primary Router Outlet</mat-card-title>
+      <mat-card-subtitle>Content loads below based on the active route</mat-card-subtitle>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="router-card-content">
+      <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
 </div>

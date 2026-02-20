@@ -1,3 +1,29 @@
-<p>
-  user-child works!
-</p>
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar class="card-avatar user-avatar">face</mat-icon>
+    <mat-card-title>User Profile</mat-card-title>
+    <mat-card-subtitle>Child route of the User section</mat-card-subtitle>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon matListIcon>check_circle</mat-icon>
+        <h4 mat-line>user-child works!</h4>
+        <p mat-line>This component is loaded via nested routing</p>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>layers</mat-icon>
+        <h4 mat-line>Route: /user/uchild</h4>
+        <p mat-line>Default child route of the user parent</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions>
+    <mat-chip-list>
+      <mat-chip color="primary" selected>Profile</mat-chip>
+      <mat-chip>User Route</mat-chip>
+    </mat-chip-list>
+  </mat-card-actions>
+</mat-card>

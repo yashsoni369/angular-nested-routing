@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../../material.module';
 
 import { AdminAboutComponent } from './admin-about.component';
 
@@ -8,6 +10,7 @@ describe('AdminAboutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [NoopAnimationsModule, MaterialModule],
       declarations: [AdminAboutComponent]
     }).compileComponents();
   }));
@@ -40,5 +43,10 @@ describe('AdminAboutComponent', () => {
   it('should have the selector "app-admin-about"', () => {
     const el = fixture.debugElement.nativeElement;
     expect(el.tagName.toLowerCase()).toBe('app-admin-about');
+  });
+
+  it('should be wrapped in a mat-card', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('mat-card')).toBeTruthy();
   });
 });
