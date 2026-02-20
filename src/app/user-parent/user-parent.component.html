@@ -1,3 +1,25 @@
-<p>
-  user-parent works!
-</p>
+<div class="user-container">
+  <mat-card class="user-main-card">
+    <mat-card-header>
+      <mat-card-avatar class="user-avatar">
+        <mat-icon>group</mat-icon>
+      </mat-card-avatar>
+      <mat-card-header-text>
+        <mat-card-title>User Management</mat-card-title>
+        <mat-card-subtitle>User Management Section</mat-card-subtitle>
+      </mat-card-header-text>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-list>
+        <mat-list-item>
+          <mat-icon mat-list-icon>waving_hand</mat-icon>
+          <h4 mat-line>Welcome to the User Section</h4>
+          <p mat-line>Manage and view user profiles</p>
+        </mat-list-item>
+      </mat-list>
+      <mat-divider class="divider-spacing"></mat-divider>
+      <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,19 @@
+.about-card {
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.about-avatar {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-avatar mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}

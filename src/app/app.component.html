@@ -1,34 +1,25 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to Nested Routing Tutorial!
-  </h1>
-</div>
-<h2>Click on the button to start: </h2>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<mat-toolbar color="primary">
+  <mat-icon class="toolbar-icon">router</mat-icon>
+  <span class="toolbar-title">Angular Child Routing</span>
+  <span class="spacer"></span>
+  <button mat-button [routerLink]="['/admin']">
+    <mat-icon>admin_panel_settings</mat-icon>
+    Admin
   </button>
+  <button mat-button [routerLink]="['/user']">
+    <mat-icon>person</mat-icon>
+    User
+  </button>
+</mat-toolbar>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" [routerLink]="[ '/admin' ]">Admin
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="[ '/user' ]">User</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- <button [routerLink]="[ '/admin' ]">Admin</button>
-<button [routerLink]="[ '/user' ]">User</button> -->
-<div class="jumbotron">
-  <h2>First Router</h2>
-  <br>
-  <router-outlet></router-outlet>
+<div class="content-container">
+  <mat-card class="welcome-card">
+    <mat-card-header>
+      <mat-card-title>Welcome to Nested Routing Tutorial!</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <h2>First Router</h2>
+      <router-outlet></router-outlet>
+    </mat-card-content>
+  </mat-card>
 </div>

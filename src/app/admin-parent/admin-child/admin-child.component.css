@@ -1,0 +1,19 @@
+.child-card {
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.child-avatar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.child-avatar mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}

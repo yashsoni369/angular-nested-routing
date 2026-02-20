@@ -1,12 +1,30 @@
-<p>
-  admin-parent Component!
-</p>
-
-<h2>Default 1st child is Loaded</h2>
-
-
-<button class="btn btn-primary" [routerLink]="[ './achild' ]">Child</button>
-<button class="btn btn-primary" [routerLink]="[ './aabout' ]">About</button>
-<div class="jumbotron" style="border: 1px solid black">
-  <router-outlet></router-outlet>
+<div class="admin-container">
+  <mat-card class="admin-main-card">
+    <mat-card-header>
+      <mat-card-avatar class="admin-avatar">
+        <mat-icon>admin_panel_settings</mat-icon>
+      </mat-card-avatar>
+      <mat-card-header-text>
+        <mat-card-title>Admin Panel</mat-card-title>
+        <mat-card-subtitle>Default 1st child is Loaded</mat-card-subtitle>
+      </mat-card-header-text>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <div class="button-group">
+        <button mat-raised-button color="primary" [routerLink]="['./achild']">
+          <mat-icon>child_care</mat-icon>
+          Child
+        </button>
+        <button mat-raised-button color="accent" [routerLink]="['./aabout']">
+          <mat-icon>info</mat-icon>
+          About
+        </button>
+      </div>
+      <mat-divider class="divider-spacing"></mat-divider>
+      <mat-card class="child-outlet-card">
+        <router-outlet></router-outlet>
+      </mat-card>
+    </mat-card-content>
+  </mat-card>
 </div>
