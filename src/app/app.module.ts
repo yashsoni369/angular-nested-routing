@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCardModule, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { AdminParentComponent } from './admin-parent/admin-parent.component';
@@ -20,6 +22,10 @@ import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.comp
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
+    MatToolbarModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/admin', pathMatch: 'full' },
       {
@@ -36,4 +42,3 @@ import { AdminAboutComponent } from './admin-parent/admin-about/admin-about.comp
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-{ }

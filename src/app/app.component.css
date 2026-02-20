@@ -1,0 +1,13 @@
+.page {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.welcome-card {
+  text-align: center;
+}

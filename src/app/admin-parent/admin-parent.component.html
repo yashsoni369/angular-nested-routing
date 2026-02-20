@@ -1,12 +1,14 @@
-<p>
-  admin-parent Component!
-</p>
+<mat-card class="section-card">
+  <mat-card-title>Admin Section</mat-card-title>
+  <mat-card-content>
+    <p>Default 1st child is loaded.</p>
+    <div class="actions">
+      <button mat-raised-button color="primary" [routerLink]="[ './achild' ]">Child</button>
+      <button mat-stroked-button color="primary" [routerLink]="[ './aabout' ]">About</button>
+    </div>
+  </mat-card-content>
+</mat-card>
 
-<h2>Default 1st child is Loaded</h2>
-
-
-<button class="btn btn-primary" [routerLink]="[ './achild' ]">Child</button>
-<button class="btn btn-primary" [routerLink]="[ './aabout' ]">About</button>
-<div class="jumbotron" style="border: 1px solid black">
+<mat-card class="child-card">
   <router-outlet></router-outlet>
-</div>
+</mat-card>

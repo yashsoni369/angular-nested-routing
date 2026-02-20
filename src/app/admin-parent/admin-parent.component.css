@@ -1,3 +1,12 @@
 .color{
     background: green;
 }
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.child-card {
+  margin-top: 16px;
+}
