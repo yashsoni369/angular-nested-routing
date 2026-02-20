@@ -1,0 +1,36 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { UserChildComponent } from './user-child.component';
+
+describe('UserChildComponent', () => {
+  let component: UserChildComponent;
+  let fixture: ComponentFixture<UserChildComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ UserChildComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(UserChildComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should have correct selector', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled).toBeTruthy();
+  });
+
+  it('should call ngOnInit', () => {
+    spyOn(component, 'ngOnInit');
+    component.ngOnInit();
+    expect(component.ngOnInit).toHaveBeenCalled();
+  });
+});
